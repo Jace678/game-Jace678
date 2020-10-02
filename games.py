@@ -1,6 +1,6 @@
 import gameSearch
 
-class RenameThisGame(gameSearch.Game):
+class ThreeMusketeers(gameSearch.Game):
     '''
     Describe your game here.
     Include a reference to the exact rules.
@@ -35,17 +35,17 @@ instances = []
 # Include additional instances one move from the end,
 # 2-4 moves from the end, etc.
 
-instances += [RenameThisGame('?')]
-instances[-1].label = 'CopyPasta, tsk, tsk!'
-
-instances += [RenameThisGame('?')]
-instances[-1].label = 'CopyPasta, tsk, tsk!'
-
-instances += [RenameThisGame('?')]
-instances[-1].label = 'CopyPasta, tsk, tsk!'
-
-instances += [RenameThisGame('?')]
-instances[-1].label = 'CopyPasta, tsk, tsk!'
+# instances += [RenameThisGame('?')]
+# instances[-1].label = 'CopyPasta, tsk, tsk!'
+#
+# instances += [RenameThisGame('?')]
+# instances[-1].label = 'CopyPasta, tsk, tsk!'
+#
+# instances += [RenameThisGame('?')]
+# instances[-1].label = 'CopyPasta, tsk, tsk!'
+#
+# instances += [RenameThisGame('?')]
+# instances[-1].label = 'CopyPasta, tsk, tsk!'
 
 # Change to your name
 name = 'Aardvark, Aaron'
@@ -68,18 +68,18 @@ games['hardest'] = {
         gameSearch.AlphaBeta(6),
     ]
 }
+#
+# games['fun'] = {
+#     'evaluation' : 'play',
+#     'instance' : RenameThisGame(),
+#     'players' : [   # uncomment two  Players
+#         gameSearch.Query('Aaron'),
+#         gameSearch.Random(),            # Add seed in ()'s for a repeatable game
+#         # gameSearch.MiniMax(),         # Add horizon in ()'s if != 4
+#         # gameSearch.AlphaBeta(),       # Add horizon in ()'s if != 4
+#         # gameSearch.Query('Aamy'),
+#     ]
 
-games['fun'] = {
-    'evaluation' : 'play',
-    'instance' : RenameThisGame(),
-    'players' : [   # uncomment two  Players
-        gameSearch.Query('Aaron'),
-        gameSearch.Random(),            # Add seed in ()'s for a repeatable game
-        # gameSearch.MiniMax(),         # Add horizon in ()'s if != 4
-        # gameSearch.AlphaBeta(),       # Add horizon in ()'s if != 4
-        # gameSearch.Query('Aamy'),
-    ]
-}
 
 ###################################################
 
